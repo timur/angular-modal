@@ -1,0 +1,12 @@
+<div [@dialog] class="modal-mask" (click)="close()">
+  <div class="modal-close" (click)="close()">
+    X
+  </div>
+  <div class="modal-container" (click)="$event.stopPropagation()">
+    <div class="modal-heading">
+      <h1>INFORMATION</h1>
+    </div>
+
+    <ng-content></ng-content>
+  </div>
+</div>

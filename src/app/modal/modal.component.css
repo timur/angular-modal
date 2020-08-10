@@ -1,0 +1,58 @@
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+}
+
+.modal-container {
+  width: 300px;
+  margin: auto;
+  padding: 20px 30px;
+  background-color: #E3F2FB;
+}
+
+.modal-heading {
+  position: absolute;
+}
+
+.model-heading, h1 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: -40px 0px 0px -10px;
+  color: white;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #42b983;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .modal-container {
+      width: 100%;
+      min-height: 300px;;
+    }
+}
