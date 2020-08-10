@@ -1,4 +1,4 @@
-<div [@dialog] class="modal-mask" (click)="close()">
+<div [@dialog] *ngIf="visible" class="modal-mask" (click)="close()">
   <div class="modal-close" (click)="close()">
     X
   </div>

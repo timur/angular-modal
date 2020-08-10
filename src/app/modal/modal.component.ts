@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, Input, EventEmitter } from '@angular/core';
 import {
   trigger,
   state,
@@ -30,6 +30,8 @@ export class ModalComponent {
   private windowScrolling: WindowService;
 
   @Output() closeModal = new EventEmitter();
+  
+  @Input() visible: boolean;
 
   constructor(windowScrolling: WindowService) {
     this.windowScrolling = windowScrolling;
